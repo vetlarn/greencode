@@ -88,21 +88,21 @@
 @media screen and (max-width: 1665px) {
     .blogpage-blog {
         width: 70%;
-        height: 9%;
+        height: 12.5%;
     }
 }
 
 @media screen and (max-width: 1450px) {
     .blogpage-blog {
         width: 80%;
-        height: 9%;
+        height: 13%;
     }
 }
 
 @media screen and (max-width: 1220px) {
     .blogpage-blog {
         width: 90%;
-        height: 10%;
+        height: 12.5%;
     }
 }
 
