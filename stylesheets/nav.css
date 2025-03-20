@@ -1,0 +1,59 @@
+/*Denne lar oss blant annet sette nav i senter av parent*/
+.nav-container {
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-between;
+    width: 1400px;
+}
+
+.logo-elements {
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title-text {
+    font-size: 20pt;
+    color: #A9BE62;
+    text-decoration: none;
+}
+
+.nav-elements {
+    list-style: none;
+    display: flex;
+    width: 500px;
+    float: right;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*------------*/
+
+#nav1, #nav2, #nav3, #nav4 {
+    border-radius: 8px;
+    transition: background-color 0.1s ease, transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+#nav1 a, #nav2 a, #nav3 a, #nav4 a {
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: inherit;
+    text-decoration: none;
+    width: 105px;
+    height: 35px;
+}
+
+#nav1:hover, #nav2:hover, #nav3:hover, #nav4:hover  {
+    background-color: #A9BE62;
+    box-shadow: 0 4px 8px rgba(169, 190, 98, 0.5), 0 8px 16px rgba(169, 190, 98, 0.3), 0 12px 24px rgba(169, 190, 98, 0.1);
+}

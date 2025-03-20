@@ -1,0 +1,112 @@
+.menu-line {
+    height: 5px;
+    width: 30px;
+    background-color: lightgray;
+    margin: 6px;
+}
+
+/* åpner via media senere */
+.hamburger-menu, .menu-line {
+    display: none;
+}
+
+#hamburger-menu {
+    border-radius: 3px;
+}
+
+#menu-line-2 {
+    margin-top: 10px;
+}
+
+#hamburger-menu {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    display: none;
+}
+
+.menu-line {
+    height: 4px;
+    width: 30px;
+    background-color: black;
+    margin-top: 7px;
+}
+
+/* Hidden Menu */
+.hamburger-menu {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100vh;
+    background-color: floralwhite;
+    transition: right 0.3s ease-in-out;
+    z-index: 1001;
+}
+
+.hamburger-menu.active {
+    right: 0;
+}
+
+/* Menu Content */
+.hamburger-menu-content {
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.hamburger-menu-alt {
+    width: 95px;
+}
+
+.hamburger-menu-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.hamburger-menu-content ul li {
+    padding: 15px 0;
+}
+
+.hamburger-menu-content ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+    width: 95px;
+}
+
+.hamburger-menu-content a:hover, .close-menu:hover {
+    color: #A9BE62;
+}
+
+/* Close Button */
+.close-menu {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Overlay for Background */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.overlay.active {
+    display: block;
+}

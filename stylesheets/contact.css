@@ -1,0 +1,77 @@
+/* Kontaktskjema frfr on god no cap */
+
+   .form-container {
+    border: 1px solid rgb(228, 220, 220);
+    padding: 20px;
+    width: 50%;
+    max-width: 500px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+.form-group {
+    margin-bottom: 5px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 80%;
+    max-width: 800px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+button.submit-button {
+    font-size: medium;
+    float: left;
+    padding: 15px 20px;
+    background-color: #A9BE62;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 5%;
+}
+
+button.submit-button:hover {
+    background-color: #2742db;
+}
+
+.entire-page{ /*ikke best practise men flytter footer ned til bunnen*/
+    height: 825px;
+}
+
+.response-box {
+    display: none;
+    color: #fff;
+    background-color: #A9BE62;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    max-width: 600px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    line-height: 1.6;
+}

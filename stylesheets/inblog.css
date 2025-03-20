@@ -1,0 +1,17 @@
+.in-blog-container {
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+@media screen and (max-width: 767px) {
+    .in-blog-container {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    .main-header {
+        font-size: 20pt;
+    }
+    .sub-header {
+        font-size: 14pt;
+    }
+  }
