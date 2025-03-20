@@ -158,7 +158,7 @@ nav {
 
 /* Menu Content */
 .hamburger-menu-content {
-    width: 100%;
+    width: 100%;€
     text-align: center;
     padding-top: 20px;
 }
@@ -270,6 +270,11 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    transition: box-shadow 0.3s ease; /* Smooth transition for the shadow effect */
+}
+
+.blog-box:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
 }
 
 .blog-preview-image {
