@@ -321,6 +321,11 @@ footer {
     margin-top: auto;
 }
 
+.no-link-style {
+    text-decoration: none; /* Removes underline */
+    color: inherit; /* Inherits the text color from the parent */
+    cursor: default; /* Optional: Changes the cursor to default */
+}
 
 /*               Responsive                  */
 @media screen and (min-width: 1665px) {
