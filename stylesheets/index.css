@@ -158,7 +158,7 @@ nav {
 
 /* Menu Content */
 .hamburger-menu-content {
-    width: 100%;€
+    width: 100%;
     text-align: center;
     padding-top: 20px;
 }
@@ -174,7 +174,6 @@ nav {
 
 .hamburger-menu-content ul li {
     padding: 15px 0;
-    text-align: center; /* Center the list items */
 }
 
 .hamburger-menu-content ul li a {
@@ -271,11 +270,6 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    transition: box-shadow 0.3s ease; /* Smooth transition for the shadow effect */
-}
-
-.blog-box:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
 }
 
 .blog-preview-image {
@@ -327,11 +321,6 @@ footer {
     margin-top: auto;
 }
 
-.no-link-style {
-    text-decoration: none; /* Removes underline */
-    color: inherit; /* Inherits the text color from the parent */
-    cursor: default; /* Optional: Changes the cursor to default */
-}
 
 /*               Responsive                  */
 @media screen and (min-width: 1665px) {

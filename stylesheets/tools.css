@@ -12,18 +12,14 @@
     background-color:beige;
     border-radius: 24px;
     margin: 25px;
-    height: 100%;
+    height: auto;
     width: 60%;
     display: flex;
     position: relative;
 }
 
-.blogpage-blog:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
-}
-
 .blogpage-blog-image{
-    height: 100%; /* Ensure the container fills the height of the parent box */
+    height: auto; /* Ensure the container fills the height of the parent box */
     width: 40%; /* Adjust width to match the layout */
     overflow: hidden; /* Prevent overflow of the image */
     display: flex; /* Ensure proper alignment */
@@ -94,12 +90,18 @@
         width: 70%;
         height: 12.5%;
     }
+    .spacer {
+        height: 90px;
+    }
 }
 
 @media screen and (max-width: 1450px) {
     .blogpage-blog {
         width: 80%;
-        height: 13%;
+        height: 12.5%;
+    }
+    .spacer {
+        height: 90px;
     }
 }
 
@@ -107,6 +109,9 @@
     .blogpage-blog {
         width: 90%;
         height: 12.5%;
+    }
+    .spacer {
+        height: 90px;
     }
 }
 
@@ -116,7 +121,7 @@
         height: 11%;
     }
     .spacer {
-        height: 120px;
+        height: 90px;
     }
 }
 
@@ -144,7 +149,7 @@
         margin-left: 5%;
     }
     .spacer {
-        height: 130px;
+        height: 120px;
     }
     .blogpage-blog-button {
         margin-top: 20px;
