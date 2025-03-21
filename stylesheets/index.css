@@ -314,6 +314,31 @@ nav {
     color: gray;
 }
 
+.blogpage-blog-button {
+    background-color: orange;
+    height: 30px;
+    width: 90px;
+    display: flex;
+    justify-content: center;
+    border-radius: 23px;
+    margin-top: 5%;
+    align-items: center;
+}
+.blogpage-blog-button, a {
+    color: black;
+    text-decoration: none;
+}
+
+.knappeknapp {
+    display: flex;
+    justify-content: end;
+    position: absolute;
+    bottom: 1.5%;
+    right: 2.5%;
+    margin-right: 0;
+    margin-bottom: 10px;
+}
+
 footer {
     color: #A9BE62;
     text-align: center;
