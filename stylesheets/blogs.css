@@ -18,6 +18,10 @@
     position: relative;
 }
 
+.blogpage-blog:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 .blogpage-blog-image{
     height: 100%; /* Ensure the container fills the height of the parent box */
     width: 40%; /* Adjust width to match the layout */
