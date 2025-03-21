@@ -125,15 +125,13 @@
         width: 95%;
         height: 12.5%;
     }
-    .spacer {
-        height: 90px;
-    }
 }
 
 @media screen and (max-width: 767px) {
     .blogpage-blog {
         flex-direction: column;
         width: 90%;
+        height: 100%;
     }
     .blogpage-blog-image {
         display: none; /* Hides the image on smaller screens */
@@ -142,9 +140,6 @@
         width: 90%;
         text-align: start;
         margin-left: 5%;
-    }
-    .spacer {
-        height: 120px;
     }
     .blogpage-blog-button {
         margin-top: 20px;
