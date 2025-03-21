@@ -21,7 +21,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: 100vh; /* Ensure the page takes up the full height of the viewport */
+    min-height: 100vh;
 }
 
 /*Denne lar oss blant annet sette nav i senter av parent*/
@@ -177,7 +177,7 @@ nav {
 
 .hamburger-menu-content ul li {
     padding: 15px 0;
-    text-align: center; /* Center the list items */
+    text-align: center;
 }
 
 .hamburger-menu-content ul li a {
@@ -274,11 +274,11 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    transition: box-shadow 0.3s ease; /* Smooth transition for the shadow effect */
+    transition: box-shadow 0.3s ease;
 }
 
 .blog-box:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .blog-preview-image {
@@ -324,16 +324,16 @@ nav {
 }
 
 footer {
-    margin-top: auto; /* Push the footer to the bottom */
+    margin-top: auto;
     text-align: center;
     color: #A9BE62;
     padding: 10px 0;
-    background-color: floralwhite; /* Optional: Add a background color */
+    background-color: floralwhite;
 }
 
 .no-link-style {
-    text-decoration: none; /* Removes underline */
-    color: inherit; /* Inherits the text color from the parent */
+    text-decoration: none;
+    color: inherit;
 }
 
 /*               Responsive                  */
