@@ -18,6 +18,10 @@
     position: relative;
 }
 
+.blogpage-blog:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 .blogpage-blog-image{
     height: auto; /* Ensure the container fills the height of the parent box */
     width: 40%; /* Adjust width to match the layout */
@@ -88,40 +92,28 @@
 @media screen and (max-width: 1665px) {
     .blogpage-blog {
         width: 70%;
-        height: 12.5%;
-    }
-    .spacer {
-        height: 90px;
+        height: 9%;
     }
 }
 
 @media screen and (max-width: 1450px) {
     .blogpage-blog {
         width: 80%;
-        height: 12.5%;
-    }
-    .spacer {
-        height: 90px;
+        height: 9%;
     }
 }
 
 @media screen and (max-width: 1220px) {
     .blogpage-blog {
         width: 90%;
-        height: 12.5%;
-    }
-    .spacer {
-        height: 90px;
+        height: auto;
     }
 }
 
 @media screen and (max-width: 1023px) {
     .blogpage-blog {
         width: 95%;
-        height: 11%;
-    }
-    .spacer {
-        height: 90px;
+        height: auto;
     }
 }
 
@@ -130,15 +122,13 @@
         width: 95%;
         height: 12.5%;
     }
-    .spacer {
-        height: 90px;
-    }
 }
 
 @media screen and (max-width: 767px) {
     .blogpage-blog {
         flex-direction: column;
         width: 90%;
+        height: auto;
     }
     .blogpage-blog-image {
         display: none; /* Hides the image on smaller screens */
@@ -147,9 +137,6 @@
         width: 90%;
         text-align: start;
         margin-left: 5%;
-    }
-    .spacer {
-        height: 120px;
     }
     .blogpage-blog-button {
         margin-top: 20px;
