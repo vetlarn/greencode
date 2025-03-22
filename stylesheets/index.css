@@ -275,10 +275,12 @@ nav {
     flex-direction: column;
     justify-content: space-between;
     transition: box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .blog-box:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-10px); /* Moves the element slightly upward */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhances the shadow */
 }
 
 .blog-preview-image {
