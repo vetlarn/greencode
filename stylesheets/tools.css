@@ -116,6 +116,7 @@
     }
     .blogpage-blog-text {
         width: 90%;
+        height: auto;
         text-align: start;
         margin-left: 5%;
     }
