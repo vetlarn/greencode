@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nb">
 
 <head>
     <meta charset="UTF-8">
@@ -11,7 +11,32 @@
     <link rel="stylesheet" href="stylesheets/index.css">
     <script src="scripts/hamburger.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Green Code Project</title>
+    <title>Grønn Kode Prosjekt</title>
+    <style>
+        .button-container {
+            padding-left: 24px;
+            padding-bottom: 24px;
+            margin-top: 10px;
+        }
+        
+        .about-button {
+            display: inline-block;
+            padding: 8px 20px;
+            background-color: #A9BE62;
+            color: black;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 500;
+            border: 1px solid #A9BE62;
+            transition: background-color 0.1s ease, transform 0.1s ease, box-shadow 0.1s ease;
+            box-shadow: 0 4px 8px rgba(169, 190, 98, 0.5), 0 8px 16px rgba(169, 190, 98, 0.3), 0 12px 24px rgba(169, 190, 98, 0.1);
+        }
+        
+        .about-button:hover {
+            background-color: transparent;
+            box-shadow: none;
+        }
+    </style>
 </head>
 
 <body>
@@ -23,14 +48,14 @@
                         <img src="images/Logo.png" width="125" alt="logo" class="logo-img">
                     </a>
                     <a href="index.html" class="tta">
-                        <h3 class="title-text">Green Code Project</h3>
+                        <h3 class="title-text">Grønn Kode Prosjekt</h3>
                     </a>
                 </div>
                 <ul class="nav-elements">
-                    <li id="nav1"><a href="blog.html">Blogs</a></li>
-                    <li id="nav4"><a href="tools.html">Tools</a></li>
-                    <li id="nav2"><a href="about.html">About us</a></li>
-                    <li id="nav3"><a href="contact.html">Contact Us</a></li>
+                    <li id="nav1"><a href="blog.html">Eksempler</a></li>
+                    <li id="nav4"><a href="tools.html">Verktøy</a></li>
+                    <li id="nav2"><a href="about.html">Om oss</a></li>
+                    <li id="nav3"><a href="contact.html">Kontakt oss</a></li>
                     <li id="hamburger-menu">
                         <a>
                             <div class="menu-line"></div>
@@ -44,33 +69,34 @@
                 <div class="hamburger-menu-content">
                     <button class="close-menu">&times;</button>
                     <ul>
-                        <li><a href="index.html" class="hamburger-menu-alt">Home</a></li>
-                        <li><a href="blog.html" class="hamburger-menu-alt">Blogs</a></li>
-                        <li><a href="tools.html" class="hamburger-menu-alt">Tools</a></li>
-                        <li><a href="about.html" class="hamburger-menu-alt">About us</a></li>
-                        <li><a href="contact.html" class="hamburger-menu-alt">Contact Us</a></li>
+                        <li><a href="index.html" class="hamburger-menu-alt">Hjem</a></li>
+                        <li><a href="blog.html" class="hamburger-menu-alt">Eksempler</a></li>
+                        <li><a href="tools.html" class="hamburger-menu-alt">Verktøy</a></li>
+                        <li><a href="about.html" class="hamburger-menu-alt">Om oss</a></li>
+                        <li><a href="contact.html" class="hamburger-menu-alt">Kontakt oss</a></li>
                     </ul>
                 </div>
             </div>
             <div class="overlay"></div>
         </div>
         <div class="index-content">
-            <h2 class="blog-title">Green Code: Powering the future, sustainably</h2>
-            <div class="separator"></div>
+            <h2 class="blog-title">Om bærekraftig programmering</h2>
             <div class="about-container">
-                <div class="about-title">
-                    <h3>About sustainable programming</h3>
-                </div>
                 <div class="about-content">
-                    <p>Green Code is a sustainable coding approach that focuses on energy efficiency, resource
-                        optimization, and eco-friendly software development. By writing clean, efficient, and
-                        low-power-consuming code, we reduce environmental impact while enhancing performance and
-                        longevity.</p>
+                    <p><strong>Hva er grønn kode?</strong></p>
+                    <p>Grønn kode handler om å utvikle programvare på en måte som tar hensyn til miljøet. Målet er å lage løsninger som bruker minst mulig energi og ressurser, slik at programvaren blir mer bærekraftig.</p>
+                    <p><strong>Hvorfor grønn kode?</strong></p>
+                    <p>Med økende digitalisering bruker programvare stadig mer energi, noe som bidrar til klimagassutslipp. Ved å velge grønn kode, kan vi redusere miljøpåvirkningen og bidra til en mer bærekraftig digital fremtid.</p>
+                    <p><strong>Hvordan komme i gang med grønn kode?</strong></p>
+                    <p>Du kan starte med grønn kode ved å skrive effektiv og enkel kode, bruke energieffektive verktøy og rammeverk, og velge løsninger som er tilpasset ulike enheter. Små grep i utviklingen kan gi stor effekt for miljøet.</p>
+                    <div class="button-container">
+                        <a href="blog.html" class="about-button">Les eksempler</a>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="blog-header">
-            <p>Trending posts</p>
+            <p>Blogger</p>
         </div>
         <div class="blog-content">
             <div class="blog-box" id="blog-box-1">
@@ -80,9 +106,9 @@
                 </div>
                 <a href="blogs/blog3.html" class="no-link-style">
                     <div class="blog-text-preview">
-                        <h3>Sustainable hosting</h3>
+                        <h3>Bærekraftig hosting</h3>
                         <!--blog post 3-->
-                        <h4>How can we publish greener?</h4>
+                        <h4>Hvordan kan vi publisere grønnere?</h4>
                 </a>
             </div>
         </div>
@@ -93,9 +119,9 @@
             </div>
             <a href="blogs/blog6.html" class="no-link-style">
                 <div class="blog-text-preview">
-                    <h3>Clean coding</h3>
+                    <h3>Ren koding</h3>
                     <!--blog post 6-->
-                    <h4>Optimizing our algorithms and code</h4>
+                    <h4>Optimalisering av algoritmer og kode</h4>
             </a>
         </div>
     </div>
@@ -105,15 +131,15 @@
         </div>
         <a href="blogs/blog1.html" class="no-link-style">
             <div class="blog-text-preview">
-                <h3>Websites & environment</h3>
+                <h3>Nettsider & miljø</h3>
                 <!--blog post 1-->
-                <h4>How websites influence us</h4>
+                <h4>Hvordan nettsider påvirker oss</h4>
         </a>
     </div>
     </div>
     </div>
     <footer>
-        <p class="footer">© 2025 Green Code Project. All rights reserved.</p>
+        <p class="footer">© 2025 Grønn Kode Prosjekt. Alle rettigheter reservert.</p>
     </footer>
     </div>
 </body>

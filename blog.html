@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nb">
 
 <head>
     <meta charset="UTF-8">
@@ -12,7 +12,173 @@
     <link rel="stylesheet" href="stylesheets/blogs.css">
     <script src="scripts/hamburger.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog</title>
+    <title>Eksempler</title>
+    <style>
+        /* Fix for content overflow and container sizing */
+        .blogpage-container {
+            margin-top: 40px;
+            min-height: calc(100vh - 150px);
+            justify-content: flex-start;
+            align-items: center;
+        }
+        
+        /* Override the problematic height settings from media queries */
+        .blogpage-blog {
+            height: auto !important; /* Use !important to override media queries */
+            min-height: auto !important;
+            width: 80% !important;
+            flex-direction: column !important;
+            padding: 30px;
+            margin-bottom: 30px;
+            
+            /* Ensure content fits within the box */
+            display: flex;
+            align-items: stretch;
+            
+            /* Ensure all content is contained */
+            overflow: visible;
+            position: relative;
+            
+            /* Remove the hover animation */
+            transition: none;
+            transform: none !important;
+        }
+        
+        .blogpage-blog:hover {
+            transform: none !important;
+            box-shadow: none !important;
+        }
+        
+        /* Main header styling */
+        .tips-header {
+            margin-bottom: 30px;
+            font-size: 28px;
+            color: #333;
+            width: 100%;
+        }
+        
+        /* New boxes container */
+        .tips-boxes-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+            width: 100%;
+        }
+        
+        /* Individual box styling */
+        .tips-box {
+            flex: 1;
+            min-width: 280px;
+            border: 1px solid lightgray;
+            border-radius: 24px;
+            padding: 20px;
+            background-color: floralwhite;
+            margin-bottom: 20px;
+            
+            /* Prevent content overflow */
+            overflow-wrap: break-word;
+            word-wrap: break-word;
+        }
+        
+        .tips-box h3 {
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+        
+        .tips-box p {
+            margin: 0 0 10px 0;
+            line-height: 1.6;
+        }
+        
+        .tips-box .subheading {
+            font-weight: bold;
+            margin-top: 15px;
+            margin-bottom: 5px;
+            display: block;
+            font-size: 16px;
+        }
+        
+        /* Additional content section */
+        .additional-content {
+            width: 100%;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            min-height: 20px; /* Ensure it takes space even when empty */
+        }
+        
+        /* Footer positioning */
+        footer {
+            margin-top: 20px;
+            width: 100%;
+            text-align: center;
+        }
+        
+        /* Styling for code blocks */
+        pre {
+            background-color: floralwhite;
+            border-radius: 8px;
+            padding: 12px;
+            overflow-x: auto;
+            margin: 10px 0;
+            border-left: 3px solid #A9BE62;
+            width: 675px; 
+        }
+        
+        code {
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+            color: #333;
+            line-height: 1.4;
+        }
+        
+        /* Styling for the coding tips section */
+        .coding-tips-section {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 100%;
+        }
+        
+        /* Style for source section */
+        .sources-link {
+            color: blue;
+            text-decoration: underline;
+        }
+        
+        .source-item {
+            display: block;
+            margin-bottom: 10px;
+            line-height: 1.5;
+        }
+        
+        @media screen and (max-width: 925px) {
+            pre {
+                width: auto;
+            }
+        }
+
+        /* Small screen adjustments */
+        @media screen and (max-width: 767px) {
+            .tips-boxes-container {
+                flex-direction: column;
+            }
+            
+            .tips-box {
+                width: 100%;
+            }
+        }
+        
+        /* Fix for the copyright text */
+        .page-copyright {
+            width: 100%;
+            text-align: center;
+            margin-top: 15px;
+            margin-bottom: 5px;
+            color: #A9BE62;
+        }
+    </style>
 </head>
 
 <body>
@@ -24,14 +190,14 @@
                         <img src="images/Logo.png" width="125" alt="logo" class="logo-img">
                     </a>
                     <a href="index.html" class="tta">
-                        <h3 class="title-text">Green Code Project</h3>
+                        <h3 class="title-text">Grønn Kode Prosjekt</h3>
                     </a>
                 </div>
                 <ul class="nav-elements">
-                    <li id="nav1"><a href="blog.html">Blogs</a></li>
-                    <li id="nav4"><a href="tools.html">Tools</a></li>
-                    <li id="nav2"><a href="about.html">About us</a></li>
-                    <li id="nav3"><a href="contact.html">Contact Us</a></li>
+                    <li id="nav1"><a href="blog.html">Eksempler</a></li>
+                    <li id="nav4"><a href="tools.html">Verktøy</a></li>
+                    <li id="nav2"><a href="about.html">Om oss</a></li>
+                    <li id="nav3"><a href="contact.html">Kontakt oss</a></li>
                     <li id="hamburger-menu">
                         <a>
                             <div class="menu-line"></div>
@@ -45,11 +211,11 @@
                 <div class="hamburger-menu-content">
                     <button class="close-menu">&times;</button>
                     <ul>
-                        <li><a href="index.html" class="hamburger-menu-alt">Home</a></li>
-                        <li><a href="blog.html" class="hamburger-menu-alt">Blogs</a></li>
-                        <li><a href="tools.html" class="hamburger-menu-alt">Tools</a></li>
-                        <li><a href="about.html" class="hamburger-menu-alt">About us</a></li>
-                        <li><a href="contact.html" class="hamburger-menu-alt">Contact Us</a></li>
+                        <li><a href="index.html" class="hamburger-menu-alt">Hjem</a></li>
+                        <li><a href="blog.html" class="hamburger-menu-alt">Eksempler</a></li>
+                        <li><a href="tools.html" class="hamburger-menu-alt">Verktøy</a></li>
+                        <li><a href="about.html" class="hamburger-menu-alt">Om oss</a></li>
+                        <li><a href="contact.html" class="hamburger-menu-alt">Kontakt oss</a></li>
                     </ul>
                 </div>
             </div>
@@ -57,98 +223,91 @@
         </div>
         <div class="blogpage-container">
             <div class="blogpage-blog">
-                <div class="blogpage-blog-image">
-                    <a href="blogs/blog1.html" class="no-link-style"><img src="images/blog1.png" alt="placeholder"></a>
+                <h2 class="tips-header">Tips & triks!</h2>
+                <div class="tips-boxes-container">
+                    <div class="tips-box">
+                        <h3>Til den lærende utvikleren</h3>
+                        <p>Det første og viktigste er å lære seg HTML og CSS, og det på en god måte! Som de fleste utviklere vet skal det ikke mye til før en skriver kode som kanskje ikke er så effektiv som den har potensialet til å være.</p>
+                        <p>For å bli god til å skrive HTML og CSS (og kanskje javascript) anbefaler vi:</p>
+                        <span class="subheading">Prøv deg fram og kod ofte!</span>
+                        <p>Det finnes ingen "quick-fix" for å bli god, og ofte er løsningen bare å bygge; prøv deg frem, og husk at feilene du gjør fort er det du lærer av! Jo mer du koder, jo mer progresjon vil du ha.</p>
+                        <span class="subheading">Bruk W3Schools</span>
+                        <p>W3Schools er en nettside som inneholder en rekke informasjon om både HTML, CSS og Javascript, enten det skulle være hamburger-menu, bildebehandling, hover-effekter og mer.</p>
+                    </div>
+                    <div class="tips-box">
+                        <h3>Flere kodespråk?</h3>
+                        <p>Det er kjempebra om du har lært deg å skrive effektiv HTML, CSS og Javascript. Godt jobbet, men ganger er det faktisk bare halve jobben når det kommer til grønn koding.</p>
+                        <p>Visste du at den samme kodejobben ikke er like rask og energieffektiv tvers av programmeringsspråkene? Å telle seg gjennom en liste, er ikke alltid å telle seg gjennom en liste.</p>
+                        <p>Selv om Python de siste årene har fått mye oppmerksomhet, og blant annet har flere brukere, bruker Python ifølge forskning hele 38 ganger mer energi enn Java! Et mer effektivt programmeringsspråk er også ofte raskere, og det kan dermed være nyttig å utforske hvilke programmeringsspråk som passer best for deg.</p>
+                    </div>
                 </div>
-                <div class="blogpage-blog-text">
-                    <a href="blogs/blog1.html" class="no-link-style">
-                        <h2 class="blogpage-blog-title">Websites impact on our environment</h2>
-                        <p class="blogpage-blog-preview">In an increasingly digital world, the environmental impact of
-                            websites is often overlooked. While the internet may seem intangible, it requires massive
-                            amounts of energy to function. Websites rely on data centers, servers, and networks, all of
-                            which contribute to carbon emissions...</p>
-                    </a>
+                <!-- Space for additional content -->
+                <div class="additional-content">
+                    <h2 class="tips-header">Tips for effektiv kode</h2>
+                    
+                    <div class="coding-tips-section">
+                        <div class="code-section">
+                            <h3>Python</h3>
+                            <p>En viktig del av grønn koding er å behandle data på en mest mulig effektiv måte. Når man arbeider med store mengder data, kan det fort føre til unødvendig bruk av ressurser og energi, spesielt om det brukes mange og tunge løkker. Ved bruk av smarte løsninger som listekomprimering kan være med på å gjøre koden mer energieffektiv.</p>
+                            <p>Vi har valgt å legge ved et eksempel hvor vi lager en liste med kvadrattall fra 0 - 9:</p>
+                            
+                            <span class="subheading">Uten listekomprimering i Python:</span>
+                            <pre><code>squares = []
+for i in range(10):
+    squares.append(i**2)</code></pre>
+                            
+                            <span class="subheading">Med listekomprimering i Python:</span>
+                            <pre><code>squares = [i**2 for i in range(10)]</code></pre>
+                        </div>
+                        
+                        <div class="code-section">
+                            <h3>SQL</h3>
+                            <p>Det blir ofte hentet ut for mye data fra databasen i forhold til hva man egentlig trenger, og dette fører til unødvendig mye ressursbruk.</p>
+                            <p>Ved å se nærmere på spørringer og data som trengs, vil dette være med på å effektivisere belastning på både server og nettverk. Dette gir en ringvirkning hvor både brukeropplevelse, tid og energi spares.</p>
+                            
+                            <span class="subheading">Før:</span>
+                            <pre><code>// Viser data fra alle kolonner i tabellen 'users'
+SELECT * FROM users;</code></pre>
+                            
+                            <span class="subheading">Etter:</span>
+                            <pre><code>// Viser kun data fra kolonnene 'firstName' og 'lastName' i tabellen 'users'.
+SELECT firstName, lastName FROM users;</code></pre>
+                        </div>
+                        
+                        <div class="code-section">
+                            <h3>Javascript</h3>
+                            <p>Dersom det bare skal gjøres enklere operasjoner i Javascript vil det være lurt å ta i bruk innebygd funksjonalitet, i stedet for å laste inn større biblioteker.</p>
+                            <p>Ved å ta i bruk den innebygde funksjonen vil nettsiden laste raskere og bruke mindre energi, som igjen er med på å redusere karbonavtrykk.</p>
+                            
+                            <span class="subheading">Før:</span>
+                            <pre><code>import _ from 'lodash';
+const doubled = _.map([1, 2, 3], n => n * 2);</code></pre>
+                            
+                            <span class="subheading">Etter:</span>
+                            <pre><code>const doubled = [1, 2, 3].map(n => n * 2);</code></pre>
+                        </div>
+                        
+                        <div class="code-section">
+                            <h3>Lazy loading</h3>
+                            <p>Lazy loading er en teknikk hvor ressurser som for eksempel bilder eller data ikke blir lastet inn før de faktisk trengs. Dette gjør at nettsiden vil laste raskere, bruke mindre båndbredde og redusere energiforbruket, noe som gir en positiv effekt på brukeropplevelsen og miljøet.</p>
+                            
+                            <pre><code>&lt;img src="image.jpg" loading="lazy" alt="A description"&gt;</code></pre>
+                        </div>
+                        
+                        <div class="code-section">
+                            <h3>Kilder</h3>
+                            <div class="source-item">Eksempel for HTML: <a href="https://developer.mozilla.org/en-US/docs/Web/Performance/Guides/Lazy_loading" target="_blank" rel="noopener noreferrer" class="sources-link">developer.mozilla.org/.../Lazy_loading</a></div>
+                            <div class="source-item">Eksempler for python: <a href="https://www.suso.academy/en/2023/03/13/green-coding-the-5-most-important-basics-for-sustainable-software-development-with-code-examples/" target="_blank" rel="noopener noreferrer" class="sources-link">suso.academy/.../green-coding...</a></div>
+                            <div class="source-item">Eksempler for SQL: <a href="https://medium.com/learning-sql/12-tips-for-optimizing-sql-queries-for-faster-performance-8c6c092d7af1" target="_blank" rel="noopener noreferrer" class="sources-link">medium.com/.../optimizing-sql-queries...</a></div>
+                            <div class="source-item">Eksempler for Javascript: <a href="https://hackernoon.com/is-lodash-that-good-performance-comparison-of-javascript-and-lodash" target="_blank" rel="noopener noreferrer" class="sources-link">hackernoon.com/.../javascript-and-lodash</a></div>
+                        </div>
+                    </div>
                 </div>
+                <!-- Copyright inside the container -->
+                <p class="page-copyright">© 2025 Grønn Kode Prosjekt. Alle rettigheter reservert.</p>
             </div>
-            <div class="blogpage-blog">
-                <div class="blogpage-blog-image">
-                    <a href="blogs/blog2.html" class="no-link-style"><img src="images/blog2.png" alt="placeholder"></a>
-                </div>
-                <div class="blogpage-blog-text">
-                    <a href="blogs/blog2.html" class="no-link-style">
-                        <h2 class="blogpage-blog-title">The future of greencode</h2>
-                        <p class="blogpage-blog-preview">The internet is a major contributor to global carbon emissions,
-                            consuming enormous amounts of energy to power data centers, servers, and devices. As digital
-                            services continue to expand, the need for more sustainable coding practices is becoming
-                            increasingly urgent...</p>
-                    </a>
-                </div>
-
-            </div>
-            <div class="blogpage-blog">
-                <div class="blogpage-blog-image">
-                    <a href="blogs/blog3.html" class="no-link-style"><img src="images/blog3.png" alt="placeholder"></a>
-                </div>
-                <div class="blogpage-blog-text">
-                    <a href="blogs/blog3.html" class="no-link-style">
-                        <h2 class="blogpage-blog-title">Sustainable hosting</h2>
-                        <p class="blogpage-blog-preview">The internet may seem like an invisible force, but behind every
-                            website, app, and cloud service, there are powerful servers consuming electricity 24/7.
-                            These
-                            servers are housed in data centers, which require vast amounts of energy for operation and
-                            cooling...</p>
-                    </a>
-                </div>
-            </div>
-            <div class="blogpage-blog">
-                <div class="blogpage-blog-image">
-                    <a href="blogs/blog4.html" class="no-link-style"><img src="images/blog4.png" alt="placeholder"></a>
-                </div>
-                <div class="blogpage-blog-text">
-                    <a href="blogs/blog4.html" class="no-link-style">
-                        <h2 class="blogpage-blog-title">Optimized alghorithms</h2>
-                        <p class="blogpage-blog-preview">In an era where digital applications power almost every aspect
-                            of
-                            our lives, the efficiency of algorithms plays a critical role in shaping the internet’s
-                            environmental impact. Whether it’s a search engine processing millions of queries or a
-                            mobile
-                            app retrieving user data...</p>
-                    </a>
-                </div>
-            </div>
-            <div class="blogpage-blog">
-                <div class="blogpage-blog-image">
-                    <a href="blogs/blog5.html" class="no-link-style"><img src="images/blog5.png" alt="placeholder"></a>
-                </div>
-                <div class="blogpage-blog-text">
-                    <a href="blogs/blog5.html" class="no-link-style">
-                        <h2 class="blogpage-blog-title">A sustainable future</h2>
-                        <p class="blogpage-blog-preview">As the world becomes more digitally connected, the energy
-                            consumption of the internet continues to rise. Websites, applications, and software all
-                            require
-                            computational power, which, in turn, demands electricity...</p>
-                    </a>
-                </div>
-                </a>
-            </div>
-            <div class="blogpage-blog">
-                <div class="blogpage-blog-image">
-                    <a href="blogs/blog6.html" class="no-link-style"><img src="images/blog6.png" alt="placeholder"></a>
-                </div>
-                <div class="blogpage-blog-text">
-                    <a href="blogs/blog6.html" class="no-link-style">
-                        <h2 class="blogpage-blog-title">What is clean coding?</h2>
-                        <p class="blogpage-blog-preview">In the era of digital transformation, the importance of
-                            sustainable
-                            practices in software development has never been more pronounced. Green coding, a subset of
-                            sustainable coding, focuses on minimizing...</p>
-                    </a>
-                </div>
-            </div>
-            <footer>
-                <p class="footer">© 2025 Green Code Project. All rights reserved.</p>
-            </footer>
         </div>
+    </div>
 </body>
 
 </html>

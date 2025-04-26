@@ -19,10 +19,10 @@ document.addEventListener("DOMContentLoaded", function () {
                     const responseBox = document.getElementById("form-response");
                     responseBox.style.display = "block";
                     responseBox.innerHTML = `
-                        <strong>Thank you, ${senderName}!</strong><br><br>
-                        Your message has been received.<br>
-                        We will get back to you shortly.<br><br>
-                        Have a nice day!
+                        <strong>Takk, ${senderName}!</strong><br><br>
+                        Din melding er mottatt.<br>
+                        Vi kommer tilbake til deg så snart som mulig.<br><br>
+                        Ha en fin dag!
                     `; // Success message with line breaks
 
                     // Hide the response box after 10 seconds
@@ -31,12 +31,12 @@ document.addEventListener("DOMContentLoaded", function () {
                         form.reset(); // Clear the form fields AFTER the response box disappears
                     }, 10000); // 10 seconds
                 } else {
-                    alert("There was an error submitting the form. Please try again.");
+                    alert("Det oppsto en feil ved innsending av skjemaet. Vennligst prøv igjen.");
                 }
             })
             .catch((error) => {
                 console.error("Error:", error);
-                alert("There was an error submitting the form. Please try again.");
+                alert("Det oppsto en feil ved innsending av skjemaet. Vennligst prøv igjen.");
             });
     });
 });
