@@ -37,17 +37,7 @@ nav {
     width: 1400px;
 }
 
-/*HELLO
-#nav4 {
-    background-color: #A9BE62;
-    height: 50px;
-    width: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 8px;
-}
-*/
+/* Navigation styling moved to nav.css */
 
 .logo-elements {
     height: inherit;
@@ -336,6 +326,31 @@ footer {
 .no-link-style {
     text-decoration: none;
     color: inherit;
+}
+
+/* Button styles moved from inline CSS */
+.button-container {
+    padding-left: 24px;
+    padding-bottom: 24px;
+    margin-top: 10px;
+}
+
+.about-button {
+    display: inline-block;
+    padding: 8px 20px;
+    background-color: #A9BE62;
+    color: black;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 500;
+    border: 1px solid #A9BE62;
+    transition: background-color 0.1s ease, transform 0.1s ease, box-shadow 0.1s ease;
+    box-shadow: 0 4px 8px rgba(169, 190, 98, 0.5), 0 8px 16px rgba(169, 190, 98, 0.3), 0 12px 24px rgba(169, 190, 98, 0.1);
+}
+
+.about-button:hover {
+    background-color: transparent;
+    box-shadow: none;
 }
 
 /*               Responsive                  */

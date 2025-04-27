@@ -1,14 +1,40 @@
-.about-content {
+.aboutpage-container {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 40px;
+    min-height: calc(100vh - 150px);
+    padding-bottom: 40px;
+}
+
+.aboutpage-content {
+    border: 1px solid lightgray;
+    background-color: beige;
+    border-radius: 24px;
+    margin: 25px;
+    margin-bottom: 50px;
+    height: auto;
     max-width: 800px;
-    margin: 50px auto;
-    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    position: relative;
+    overflow: visible;
+    padding: 30px;
+}
+
+.about-content {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
     font-family: 'Poppins', sans-serif;
     line-height: 1.8;
     color: #333;
 }
 
 .about-content h1, .about-content h2 {
-    color: #A9BE62;
     margin-bottom: 20px;
 }
 
@@ -22,9 +48,27 @@
 }
 
 .about-banner {
-    width: 100%; /* Make the banner span the full width of the container */
-    max-height: 300px; /* Limit the height of the banner */
-    object-fit: cover; /* Ensure the image scales nicely */
-    margin-bottom: 20px; /* Add spacing below the banner */
-    border-radius: 10px; /* Optional: Add rounded corners */
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+/* Footer styling */
+footer {
+    margin-top: auto;
+    width: 100%;
+    text-align: center;
+    color: #A9BE62;
+    padding: 10px 0;
+    background-color: floralwhite;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 850px) {
+    .aboutpage-content {
+        width: 90%;
+        padding: 20px;
+    }
 }

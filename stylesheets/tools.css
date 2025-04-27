@@ -1,10 +1,21 @@
+/* Tools header styling */
+.tools-header {
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: #333;
+    width: 100%;
+}
+
 .blogpage-container{
     /*border: solid 1px orange;*/
     height: auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    margin-top: 40px;
+    min-height: calc(100vh - 150px);
+    padding-bottom: 40px; /* Add space at the bottom */
 }
 
 .blogpage-blog{
@@ -12,115 +23,116 @@
     background-color:beige;
     border-radius: 24px;
     margin: 25px;
+    margin-bottom: 50px; /* Increased space at the bottom */
     height: auto;
-    width: 60%;
-    display: flex;
-    position: relative;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.blogpage-blog:hover {
-    transform: translateY(-10px); /* Moves the element slightly upward */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhances the shadow */
-}
-
-.blogpage-blog-image{
-    height: auto; /* Ensure the container fills the height of the parent box */
-    width: 40%; /* Adjust width to match the layout */
-    overflow: hidden; /* Prevent overflow of the image */
-    display: flex; /* Ensure proper alignment */
-    align-items: stretch; /* Stretch the image to fill the container */
-}
-
-.blogpage-blog-image img {
-    object-fit: cover; /* Ensures the image fills the container while maintaining aspect ratio */
-    object-position: center; /* Centers the image within the container */
-    height: 100%; /* Matches the height of the container */
-    width: 100%; /* Matches the width of the container */
-    border-top-left-radius: 24px;
-    border-bottom-left-radius: 24px;
-}
-
-.blogpage-blog-text{
-    /*border: solid 1px green;*/
-    height: auto;
-    width: 60%;
+    width: 80%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    margin-left: 8px;
-    margin-right: 8px;
+    align-items: stretch;
+    position: relative;
+    overflow: visible;
+    padding: 30px;
 }
 
-/*
-.blogpage-blog-title{
-    margin-top: 5px;
+/* Link styling */
+a {
+    color: black;
+    text-decoration: none;
 }
 
-.blogpage-blog-preview{
-    margin-top: 50px;
-}*/
+/* Tool card styling */
+.tools-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+}
+
+/* Tool button styling based on about-button */
+.tool-button {
+    display: inline-block;
+    padding: 8px 20px;
+    background-color: #A9BE62;
+    color: black;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 500;
+    border: 1px solid #A9BE62;
+    transition: background-color 0.1s ease, transform 0.1s ease, box-shadow 0.1s ease;
+    box-shadow: 0 4px 8px rgba(169, 190, 98, 0.5), 0 8px 16px rgba(169, 190, 98, 0.3), 0 12px 24px rgba(169, 190, 98, 0.1);
+    margin-top: 10px;
+}
+
+.tool-button:hover {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.tool-card {
+    background-color: floralwhite;
+    border: 1px solid #e0e0e0;
+    border-radius: 16px;
+    padding: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tool-card h3 {
+    font-size: 22px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    display: inline-block;
+}
+
+.tool-card p {
+    margin: 0 0 15px 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+
 
 @media screen and (max-width: 1665px) {
     .blogpage-blog {
-        width: 70%;
-        height: 9%;
+        width: 85%;
     }
-    .blogpage-blog-text{
-        /*border: solid 1px green;*/
-        height: 450px;
 }
 
 @media screen and (max-width: 1450px) {
     .blogpage-blog {
-        width: 80%;
-        height: 9%;
+        width: 90%;
     }
-    .blogpage-blog-text{
-        /*border: solid 1px green;*/
-        height: 400px;
 }
 
 @media screen and (max-width: 1220px) {
     .blogpage-blog {
-        width: 90%;
-        height: auto;
-    }
-    .blogpage-blog-text{
-        /*border: solid 1px green;*/
-        height: 300px;
-}
-
-@media screen and (max-width: 1023px) {
-    .blogpage-blog {
         width: 95%;
-        height: auto;
-    }
-}
-
-@media screen and (max-width: 900px) {
-    .blogpage-blog {
-        width: 95%;
-        height: 12.5%;
     }
 }
 
 @media screen and (max-width: 767px) {
     .blogpage-blog {
-        flex-direction: column;
         width: 90%;
-        height: auto;
+        padding: 20px;
     }
-    .blogpage-blog-image {
-        display: none; /* Hides the image on smaller screens */
+    
+    .tool-card {
+        padding: 15px;
     }
-    .blogpage-blog-text {
-        width: 90%;
-        height: auto;
-        text-align: start;
-        margin-left: 5%;
+    
+    .tool-card h3 {
+        font-size: 20px;
     }
-    .blogpage-blog-button {
-        margin-top: 20px;
-    }
+}
+
+/* Footer styling */
+footer {
+    margin-top: auto;
+    width: 100%;
+    text-align: center;
+    color: #A9BE62;
+    padding: 10px 0;
+    background-color: floralwhite;
+    margin-bottom: 20px;
 }
