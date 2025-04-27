@@ -34,6 +34,7 @@ a {
 
 /* Tips and tricks section styles */
 .tips-header {
+    margin-top: 20px;
     margin-bottom: 30px;
     font-size: 28px;
     color: #333;
@@ -81,11 +82,25 @@ a {
     font-size: 16px;
 }
 
+/* Full-width box container and styling */
+.fullwidth-box-container {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.tips-box-fullwidth {
+    width: 100%;
+    min-height: 100px; /* Add some minimum height to the empty box */
+}
+
 /* Additional content section */
 .additional-content {
     width: 100%;
-    margin-top: 20px;
-    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 30px;
     min-height: 20px; /* Ensure it takes space even when empty */
 }
 
@@ -95,6 +110,16 @@ a {
     flex-direction: column;
     gap: 20px;
     width: 100%;
+    margin-top: 0;
+}
+
+/* Code section styles */
+.code-section {
+    margin-bottom: 20px;
+}
+
+.code-section:first-child h3 {
+    margin-top: 0;
 }
 
 /* Code blocks */
@@ -165,9 +190,22 @@ code {
         flex-direction: column;
     }
     
-    .tips-box {
+    .tips-box, .tips-box-fullwidth {
         width: 100%;
     }
+}
+
+/* Adjust list styling for the full-width box */
+.tips-box-fullwidth ul {
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.tips-box-fullwidth li {
+    margin-left: 0;
+    padding-left: 1.5em;
+    text-indent: -1.5em;
+    list-style-position: inside;
 }
 
 /* Footer styling */
