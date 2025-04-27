@@ -60,7 +60,7 @@ nav {
 .nav-elements {
     list-style: none;
     display: flex;
-    width: 550px; /* Increased to accommodate margins */
+    width: 590px; /* Increased to accommodate wider button */
     float: right;
     align-items: center;
     justify-content: space-between;
@@ -84,7 +84,7 @@ nav {
     height: 100%;
     color: inherit;
     text-decoration: none;
-    width: 105px;
+    width: 115px;
     height: 35px;
 }
 
@@ -443,13 +443,13 @@ footer {
         font-size: 16pt;
     }
     .nav-elements {
-        width: 465px; /* Increased to accommodate margins */
+        width: 500px; /* Adjusted for medium screens */
     }
     .nav-elements li {
         font-size: 11pt;
     }
     #nav1 a, #nav2 a, #nav3 a, #nav4 a {
-        width: 95px;
+        width: 105px;
     }
 
   }
