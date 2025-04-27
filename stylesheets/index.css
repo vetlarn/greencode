@@ -68,12 +68,12 @@ nav {
 
 /*------------*/
 
-#nav1, #nav2, #nav3, #nav4 {
+#nav0, #nav1, #nav2, #nav3, #nav4 {
     border-radius: 8px;
     transition: background-color 0.1s ease, transform 0.1s ease, box-shadow 0.1s ease;
 }
 
-#nav1 a, #nav2 a, #nav3 a, #nav4 a {
+#nav0 a, #nav1 a, #nav2 a, #nav3 a, #nav4 a {
     display: block;
     display: flex;
     justify-content: center;
@@ -86,7 +86,7 @@ nav {
     height: 35px;
 }
 
-#nav1:hover, #nav2:hover, #nav3:hover, #nav4:hover  {
+#nav0:hover, #nav1:hover, #nav2:hover, #nav3:hover, #nav4:hover, .active-nav  {
     background-color: #A9BE62;
     box-shadow: 0 4px 8px rgba(169, 190, 98, 0.5), 0 8px 16px rgba(169, 190, 98, 0.3), 0 12px 24px rgba(169, 190, 98, 0.1);
 }
@@ -178,8 +178,25 @@ nav {
     width: 95px;
 }
 
-.hamburger-menu-content a:hover, .close-menu:hover {
+.hamburger-menu-content ul li a:hover {
     color: #A9BE62;
+}
+
+.hamburger-active {
+    color: #A9BE62 !important;
+    font-weight: 700;
+    position: relative;
+}
+
+.hamburger-active::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 2px;
+    background-color: #A9BE62;
 }
 
 /* Close Button */
@@ -191,6 +208,10 @@ nav {
     border: none;
     font-size: 24px;
     cursor: pointer;
+}
+
+.close-menu:hover {
+    color: #A9BE62;
 }
 
 /* Overlay for Background */
@@ -455,7 +476,7 @@ footer {
     .logo-img{
         width: 95px;
     }
-    #nav1, #nav2, #nav3, #nav4 {
+    #nav0, #nav1, #nav2, #nav3, #nav4 {
         display: none;
     }
     .hamburger-menu, .menu-line, #hamburger-menu {

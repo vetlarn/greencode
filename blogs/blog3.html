@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nb">
 
 <head>
     <meta charset="UTF-8">
@@ -12,7 +12,38 @@
     <link rel="stylesheet" href="../stylesheets/inblog.css">
     <script src="../scripts/hamburger.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Environmental Impact of Websites</title>
+    <title>Bærekraftig hosting</title>
+    <style>
+        .blog-content-box {
+            background-color: beige;
+            border: 1px solid lightgray;
+            border-radius: 24px;
+            padding: 30px 40px;
+            margin-bottom: 40px;
+            width: 80%;
+            max-width: 1200px;
+        }
+        @media screen and (max-width: 1665px) {
+            .blog-content-box {
+                width: 85%;
+            }
+        }
+        @media screen and (max-width: 1450px) {
+            .blog-content-box {
+                width: 90%;
+            }
+        }
+        @media screen and (max-width: 1220px) {
+            .blog-content-box {
+                width: 95%;
+            }
+        }
+        @media screen and (max-width: 767px) {
+            .blog-content-box {
+                padding: 20px;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -24,14 +55,15 @@
                         <img src="../images/Logo.png" width="125" alt="logo" class="logo-img">
                     </a>
                     <a href="../index.html" class="tta">
-                        <h3 class="title-text">Green Code Project</h3>
+                        <h3 class="title-text">EcoCode</h3>
                     </a>
                 </div>
                 <ul class="nav-elements">
+                    <li id="nav0"><a href="../index.html">Hjem</a></li>
                     <li id="nav1"><a href="../blog.html">Eksempler</a></li>
-                    <li id="nav4"><a href="../tools.html">Tools</a></li>
-                    <li id="nav2"><a href="../about.html">About us</a></li>
-                    <li id="nav3"><a href="../contact.html">Contact Us</a></li>
+                    <li id="nav4"><a href="../tools.html">Verktøy</a></li>
+                    <li id="nav2"><a href="../about.html">Om oss</a></li>
+                    <li id="nav3"><a href="../contact.html">Kontakt oss</a></li>
                     <li id="hamburger-menu">
                         <a>
                             <div class="menu-line"></div>
@@ -45,111 +77,44 @@
                 <div class="hamburger-menu-content">
                     <button class="close-menu">&times;</button>
                     <ul>
-                        <li><a href="../index.html" class="hamburger-menu-alt">Home</a></li>
+                        <li><a href="../index.html" class="hamburger-menu-alt">Hjem</a></li>
                         <li><a href="../blog.html" class="hamburger-menu-alt">Eksempler</a></li>
-                        <li><a href="../tools.html" class="hamburger-menu-alt">Tools</a></li>
-                        <li><a href="../about.html" class="hamburger-menu-alt">About us</a></li>
-                        <li><a href="../contact.html" class="hamburger-menu-alt">Contact Us</a></li>
+                        <li><a href="../tools.html" class="hamburger-menu-alt">Verktøy</a></li>
+                        <li><a href="../about.html" class="hamburger-menu-alt">Om oss</a></li>
+                        <li><a href="../contact.html" class="hamburger-menu-alt">Kontakt oss</a></li>
                     </ul>
                 </div>
             </div>
             <div class="overlay"></div>
         </div>
         <div class="in-blog-container">
-            <h1 class="main-header">Sustainable Hosting: Reducing the Internet’s Carbon Footprint</h1>
+            <div class="blog-content-box">
+                <h1 class="main-header">Bærekraftig hosting</h1>
 
-            <p class="paragraphs">The internet may seem like an invisible force, but behind every website, app, and
-                cloud service, there are powerful servers consuming electricity 24/7. These servers are housed in data
-                centers, which require vast amounts of energy for operation and cooling. As a result, web hosting has a
-                significant environmental impact, contributing to carbon emissions and excessive energy consumption.</p>
+                <h2 class="sub-header">Hvor mye strøm bruker egentlig serveren din?</h2>
 
-            <p class="paragraphs"><strong>Sustainable hosting</strong> aims to change this by using energy-efficient
-                infrastructure and renewable energy sources to power servers. By choosing a green hosting provider,
-                businesses and developers can significantly reduce the environmental cost of running websites and
-                digital services.</p>
+                <p class="paragraphs">I dagens stund er det mye snakk om hvilken påvirkning all bruk av IT har på miljøet. Det handler ikke bare om hvor mye strøm din private datamaskin bruker, men også om hvor mye strøm servere og tjenester i skyen bruker. Folk flest har nok ingen anelse på hvor mye strøm hele 'skyen' bruker, eller hvor mye CO2 det fører til.</p>
 
-            <h2 class="sub-header">The Environmental Cost of Traditional Hosting</h2>
+                <p class="paragraphs">Green Coding Solutions har laget et open-source verktøy som de kaller 'Eco-Server'. Programmet kan installeres på en server, verktøyet logger strømforbruket som gir da en enkel oversikt over dataene.</p>
 
-            <p class="paragraphs">Most conventional web hosting services rely on data centers powered by fossil fuels.
-                These data centers operate at full capacity around the clock, consuming electricity even when server
-                loads are low. In addition, cooling systems used to prevent server overheating add to the energy demand.
-            </p>
+                <h2 class="sub-header">Hvordan virker det?</h2>
 
-            <p class="paragraphs">Studies suggest that data centers contribute to approximately 1% of global electricity
-                consumption. As digital activity increases, the need for energy-efficient hosting solutions becomes more
-                urgent. Without intervention, the environmental impact of hosting services will continue to grow.</p>
+                <p class="paragraphs">Eco-Server bruker en modul med maskinlæring som estimerer strømforbruket basert på bruken av CPU-serveren og hvor mange virtuelle maskiner som kjører. Verktøyet kan enkelt settes opp med et installasjonsskript, og det lagrer målingene slik at du kan følge med på utviklingen over tid.</p>
 
-            <h2 class="sub-header">How Sustainable Hosting Works</h2>
+                <h2 class="sub-header">Hvorfor er dette nyttig?</h2>
 
-            <p class="paragraphs">Sustainable hosting providers take several measures to reduce energy waste and
-                minimize carbon emissions. One of the primary approaches is switching to **renewable energy sources**
-                such as solar, wind, or hydroelectric power. Some companies invest directly in renewable energy farms,
-                while others purchase green energy credits to offset their carbon footprint.</p>
+                <p class="paragraphs">Oversikt over hvor mye energi serverne dine faktisk bruker. Mulighet til å se hvilke servere som står og går uten å gjøre noe nyttig. Tall på hvor mye CO2-utslipp tjenestene dine gir. Dette gjør det enklere å ta miljøvennlige valg, for eksempel å slå av servere som ikke er i bruk, eller flytte tjenester til steder med renere strøm.</p>
 
-            <p class="paragraphs">Beyond energy sourcing, green hosting also focuses on **energy-efficient server
-                management**. Many providers use advanced cooling techniques, such as liquid cooling or natural airflow
-                systems, to reduce electricity usage. Others implement energy-saving hardware and software optimizations
-                to decrease unnecessary power consumption.</p>
+                <h2 class="sub-header">Oppsummering</h2>
 
-            <h2 class="sub-header">Benefits of Choosing Green Hosting</h2>
+                <p class="paragraphs">Ved bruk av Eco-Server kan grunnlaget forbedre bærekraftige valg, og gi en mer oversiktlig plan på strømforbruk.</p>
 
-            <p class="paragraphs">Opting for a sustainable hosting provider comes with multiple benefits, not only for
-                the environment but also for businesses and website owners.</p>
-
-            <p class="paragraphs"><strong>Lower Carbon Footprint:</strong> Websites hosted on green servers generate
-                significantly fewer carbon emissions compared to traditional hosting services.</p>
-
-            <p class="paragraphs"><strong>Energy Efficiency:</strong> Sustainable hosting providers often use modern,
-                optimized hardware that consumes less power while maintaining high performance.</p>
-
-            <p class="paragraphs"><strong>Corporate Responsibility:</strong> Businesses that switch to eco-friendly
-                hosting demonstrate a commitment to sustainability, which can enhance their brand reputation.</p>
-
-            <p class="paragraphs"><strong>Long-Term Cost Savings:</strong> While some green hosting services may
-                initially seem more expensive, energy-efficient infrastructure can lead to cost reductions over time.
-            </p>
-
-            <h2 class="sub-header">Key Features of a Green Hosting Provider</h2>
-
-            <p class="paragraphs">Not all hosting providers marketed as "green" are truly sustainable. When selecting an
-                eco-friendly hosting service, it’s important to look for key features such as:</p>
-
-            <p class="paragraphs"><strong>100% Renewable Energy:</strong> The best green hosting companies either
-                generate their own renewable energy or use verified green energy sources.</p>
-
-            <p class="paragraphs"><strong>Carbon Offset Programs:</strong> Some providers invest in environmental
-                projects, such as reforestation or carbon capture, to compensate for any unavoidable emissions.</p>
-
-            <p class="paragraphs"><strong>Efficient Data Centers:</strong> Look for hosting services that use
-                energy-efficient cooling, optimized servers, and reduced power consumption.</p>
-
-            <p class="paragraphs"><strong>Sustainability Certifications:</strong> Certifications like Green-e, Energy
-                Star, or ISO 14001 indicate that a provider follows eco-friendly practices.</p>
-
-            <h2 class="sub-header">How Developers Can Support Sustainable Hosting</h2>
-
-            <p class="paragraphs">Developers and website owners play a role in promoting sustainability by making
-                conscious choices in hosting and website design. Beyond selecting a green hosting provider, optimizing
-                websites for efficiency can further reduce energy consumption.</p>
-
-            <p class="paragraphs">Reducing unnecessary background processes, minimizing file sizes, and using caching
-                techniques can improve website performance while lowering resource usage. Lightweight coding and
-                optimized database queries also contribute to more efficient digital operations.</p>
-
-            <h2 class="sub-header">Sustainable Hosting and the Future of the Web</h2>
-
-            <p class="paragraphs">As the demand for digital services continues to grow, the importance of sustainable
-                hosting will only increase. More companies are recognizing the need to adopt green hosting solutions to
-                align with environmental goals and corporate social responsibility initiatives.</p>
-
-            <p class="paragraphs">By choosing energy-efficient hosting services and adopting sustainable web development
-                practices, businesses and developers can help build a more eco-conscious internet. Every
-                decision—whether it’s selecting a renewable-powered server or optimizing a website for
-                efficiency—contributes to reducing the environmental impact of the digital world.</p>
+                <p class="paragraphs">Kilde: <a href="https://www.green-coding.io/blog/eco-server-energy-estimation/" target="_blank" rel="noopener noreferrer" style="color: blue; text-decoration: underline;">https://www.green-coding.io/blog/eco-server-energy-estimation/</a></p>
+            </div>
+            <footer>
+                <p class="footer">© 2025 Grønn Kode Prosjekt. Alle rettigheter reservert.</p>
+            </footer>
         </div>
-        <footer>
-            <p class="footer">© 2025 Green Code Project. All rights reserved.</p>
-        </footer>
     </div>
 </body>
 

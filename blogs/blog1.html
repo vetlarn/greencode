@@ -13,6 +13,37 @@
     <script src="../scripts/hamburger.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nettsiders miljøpåvirkning</title>
+    <style>
+        .blog-content-box {
+            background-color: beige;
+            border: 1px solid lightgray;
+            border-radius: 24px;
+            padding: 30px 40px;
+            margin-bottom: 40px;
+            width: 80%;
+            max-width: 1200px;
+        }
+        @media screen and (max-width: 1665px) {
+            .blog-content-box {
+                width: 85%;
+            }
+        }
+        @media screen and (max-width: 1450px) {
+            .blog-content-box {
+                width: 90%;
+            }
+        }
+        @media screen and (max-width: 1220px) {
+            .blog-content-box {
+                width: 95%;
+            }
+        }
+        @media screen and (max-width: 767px) {
+            .blog-content-box {
+                padding: 20px;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -24,10 +55,11 @@
                         <img src="../images/Logo.png" width="125" alt="logo" class="logo-img">
                     </a>
                     <a href="../index.html" class="tta">
-                        <h3 class="title-text">Grønn Kode Prosjekt</h3>
+                        <h3 class="title-text">EcoCode</h3>
                     </a>
                 </div>
                 <ul class="nav-elements">
+                    <li id="nav0"><a href="../index.html">Hjem</a></li>
                     <li id="nav1"><a href="../blog.html">Eksempler</a></li>
                     <li id="nav4"><a href="../tools.html">Verktøy</a></li>
                     <li id="nav2"><a href="../about.html">Om oss</a></li>
@@ -56,63 +88,42 @@
             <div class="overlay"></div>
         </div>
         <div class="in-blog-container">
-            <h1 class="main-header">Nettsiders miljøpåvirkning</h1>
+            <div class="blog-content-box">
+                <h1 class="main-header">Nettsiders miljøpåvirkning</h1>
 
-            <p class="paragraphs">I en stadig mer digital verden blir nettsiders miljøpåvirkning ofte oversett. Selv om 
-                internett kan virke uhåndgripelig, krever det enorme mengder energi for å fungere. Nettsider er 
-                avhengige av datasentre, servere og nettverk, som alle bidrar til karbonutslipp. Måten en nettside 
-                er bygget og optimalisert på spiller en nøkkelrolle i å bestemme dens miljøfotavtrykk.</p>
+                <p class="paragraphs">Er virkelig nettsidene bare "i skyen", og noe vi ikke behøver å tenke på? Nei, egentlig ikke. Nettsidene vi kjører i dag, finnes på servere som også på lik linje med for eksempel billadere, er avhengig av strøm. Slik det er i dag er blant annet ca 46.9% (2024) av strømproduksjon i EU av grønn forekomst, som vil si at litt over halvparten av produsert strøm fremdeles er fossil-basert, og bidrar godt til karbonutslipp.</p>
 
-            <h2 class="sub-header">Ineffektiv kode og energisløsing</h2>
+                <p class="paragraphs">Men en nettside tar vel ikke så mye strøm? Nei, en nettside tar ikke like mye strøm som andre artikler gjør, men fremdeles kom det frem i 2022, at hele 115.000.000 nettsider er publisert <strong>bare i Europa</strong>. Med det, har du 2 tips til hvordan du kan være på nett, altså publisere din nettside, men være så grønn som mulig:</p>
 
-            <p class="paragraphs">En av de største synderne innen digital forurensning er ineffektiv kode. Dårlig 
-                optimaliserte nettsider laster unødvendige ressurser, bruker overdrevne skript og foretar flere 
-                serverforespørsler, som alle krever mer prosesseringskraft. Dette øker energiforbruket, ikke bare 
-                på hostingsiden, men også på brukerens enhet.</p>
+                <h2 class="sub-header">1. Optimaliser koden din!</h2>
 
-            <p class="paragraphs">For eksempel fører oppblåste JavaScript- og CSS-filer til lengre lastetider og høyere 
-                CPU-bruk. På samme måte kan overdrevne bilder og videoer som ikke er riktig komprimert belaste både 
-                serveren og brukerens internettforbindelse. Å effektivisere kode og optimalisere ressurser kan betydelig 
-                redusere energiforbruket.</p>
+                <p class="paragraphs">Det er ikke alltid like lett å skrive god kode, om vi i det hele tatt vet hva "god kode" er. Er du ute av nybegynner-fasen, kan du kanskje komme på å tenke hvordan noen kodespråk er mer effektive enn andre, noe som i grunn er helt sant. Uheldigvis, blir man ikke automatisk god av å bare bytte til det grønneste programmeringsspråket på markedet; du kan fortsatt finne på å skrive like dårlig kode. Gjennom nettsiden våres har vi både tips til hvordan du kan <a href="http://127.0.0.1:3000/blog.html" style="color: blue; text-decoration: underline;">effektivisere og grønngjøre koden</a> din, samt en liste med <a href="http://127.0.0.1:3000/tools.html" style="color: blue; text-decoration: underline;">verktøy</a> som kan sjekke hvor grønn nettsiden din allerede er gjennom en rekke tester.</p>
 
-            <h2 class="sub-header">Datasentre og karbonutslipp</h2>
+                <h2 class="sub-header">2. Publiser siden din gjennom en grønn provider!</h2>
 
-            <p class="paragraphs">Hver nettside er hostet på en server, vanligvis plassert i et datasenter. Disse 
-                datasentrene kjører døgnet rundt og forbruker store mengder elektrisitet til både prosessering og 
-                kjøling. Mange av dem er fortsatt avhengige av ikke-fornybare energikilder, noe som bidrar til 
-                karbonutslipp.</p>
+                <p class="paragraphs">Slik vi blant annet har vært innom gjennom en <a href="http://127.0.0.1:3000/blogs/blog3.html" style="color: blue; text-decoration: underline;">annen blogg</a> på siden vår, kan du bidra med å publisere nettsiden din gjennom en grønn provider. Her kommer en liste med diverse grønne providers:</p>
+                
+                <ul>
+                    <li><a href="https://www.greengeeks.com" target="_blank" rel="noopener noreferrer" style="color: blue; text-decoration: underline;">Greengeeks</a></li>
+                    <li><a href="https://www.a2hosting.com" target="_blank" rel="noopener noreferrer" style="color: blue; text-decoration: underline;">A2 Hosting</a></li>
+                    <li><a href="https://www.dreamhost.com" target="_blank" rel="noopener noreferrer" style="color: blue; text-decoration: underline;">DreamHost</a></li>
+                    <li><a href="https://www.siteground.com" target="_blank" rel="noopener noreferrer" style="color: blue; text-decoration: underline;">Siteground</a></li>
+                </ul>
+                
+                <p class="paragraphs">Ved å publisere nettsiden gjennom en grønn provider, kan du bidra med å senke karbonutslippet!</p>
 
-            <p class="paragraphs">Imidlertid begynner selskaper å ta tak i dette problemet ved å bruke grønne 
-                hostingleverandører som kjører på fornybar energi. Å velge en miljøvennlig hostingtjeneste kan 
-                gjøre en betydelig forskjell i å redusere en nettsides miljøpåvirkning.</p>
+                <h2 class="sub-header">Kilder</h2>
 
-            <h2 class="sub-header">Hvordan bygge en mer bærekraftig nettside</h2>
-
-            <p class="paragraphs">Det er flere måter å gjøre nettsider mer miljøvennlige på:</p>
-            <ul>
-                <li><strong>Optimaliser koden:</strong> Minimer HTML-, CSS- og JavaScript-filer, og fjern unødvendige 
-                    elementer.</li>
-                <li><strong>Bruk effektive bilder:</strong> Komprimer bilder og bruk moderne formater som WebP for å 
-                    redusere filstørrelser.</li>
-                <li><strong>Reduser serverforespørsler:</strong> Kombiner filer der det er mulig og bruk hurtigbufring 
-                    for å redusere serverbelastningen.</li>
-                <li><strong>Velg grønn hosting:</strong> Velg en webhosting-leverandør som bruker fornybar energi.
-                </li>
-                <li><strong>Aktiver lazy loading:</strong> Last inn bilder og videoer bare når de er nødvendige.</li>
-            </ul>
-
-            <h2 class="sub-header">Konklusjon</h2>
-
-            <p class="paragraphs">Nettsiders miljøpåvirkning er et økende problem som ikke bør ignoreres. Ved å ta i 
-                bruk bærekraftige webdesignpraksiser kan utviklere og nettsideeiere bidra til å redusere internetts 
-                karbonfotavtrykk. Enkle tiltak som å optimalisere kode, redusere unødvendige dataoverføringer og 
-                bruke miljøvennlige hostingtjenester kan gjøre en betydelig forskjell. Etter hvert som det digitale 
-                landskapet fortsetter å utvikle seg, er det avgjørende å ta bevisste valg om nettsidens effektivitet 
-                for en mer bærekraftig fremtid.</p>
+                <p class="paragraphs">
+                    <a href="https://ec.europa.eu/eurostat/web/products-eurostat-news/w/ddn-20250319-1" target="_blank" rel="noopener noreferrer" style="color: blue; text-decoration: underline;">https://ec.europa.eu/eurostat/web/products-eurostat-news/w/ddn-20250319-1</a><br>
+                    <a href="https://evboosters.com/ev-charging-news/europe-surpasses-900-000-public-ev-charge-points/?utm_source=chatgpt.com" target="_blank" rel="noopener noreferrer" style="color: blue; text-decoration: underline;">https://evboosters.com/ev-charging-news/europe-surpasses-900-000-public-ev-charge-points/?utm_source=chatgpt.com</a><br>
+                    <a href="https://snapshot.internetx.com/en/the-european-domain-market-in-2023/?utm_source=chatgpt.com" target="_blank" rel="noopener noreferrer" style="color: blue; text-decoration: underline;">https://snapshot.internetx.com/en/the-european-domain-market-in-2023/?utm_source=chatgpt.com</a>
+                </p>
+            </div>
+            <footer>
+                <p class="footer">© 2025 Grønn Kode Prosjekt. Alle rettigheter reservert.</p>
+            </footer>
         </div>
-        <footer>
-            <p class="footer">© 2025 Grønn Kode Prosjekt. Alle rettigheter reservert.</p>
-        </footer>
     </div>
 </body>
 
