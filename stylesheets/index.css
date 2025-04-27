@@ -60,7 +60,7 @@ nav {
 .nav-elements {
     list-style: none;
     display: flex;
-    width: 500px;
+    width: 550px; /* Increased to accommodate margins */
     float: right;
     align-items: center;
     justify-content: space-between;
@@ -71,6 +71,8 @@ nav {
 #nav0, #nav1, #nav2, #nav3, #nav4 {
     border-radius: 8px;
     transition: background-color 0.1s ease, transform 0.1s ease, box-shadow 0.1s ease;
+    margin-right: 5px; /* Add margin between buttons */
+    margin-left: 5px; /* Add margin between buttons */
 }
 
 #nav0 a, #nav1 a, #nav2 a, #nav3 a, #nav4 a {
@@ -441,7 +443,7 @@ footer {
         font-size: 16pt;
     }
     .nav-elements {
-        width: 415px;
+        width: 465px; /* Increased to accommodate margins */
     }
     .nav-elements li {
         font-size: 11pt;

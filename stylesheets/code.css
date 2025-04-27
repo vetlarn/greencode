@@ -1,4 +1,4 @@
-.blogpage-container{
+.codepage-container{
     /*border: solid 1px orange;*/
     height: auto;
     display: flex;
@@ -10,7 +10,7 @@
     padding-bottom: 40px; /* Add space at the bottom */
 }
 
-.blogpage-blog{
+.codepage-blog{
     border: 1px solid lightgray;
     background-color:beige;
     border-radius: 24px;
@@ -104,7 +104,6 @@ pre {
     padding: 12px;
     overflow-x: auto;
     margin: 10px 0;
-    border-left: 3px solid #A9BE62;
     width: 675px; 
 }
 
@@ -129,19 +128,19 @@ code {
 
 
 @media screen and (max-width: 1665px) {
-    .blogpage-blog {
+    .codepage-blog {
         width: 85%;
     }
 }
 
 @media screen and (max-width: 1450px) {
-    .blogpage-blog {
+    .codepage-blog {
         width: 90%;
     }
 }
 
 @media screen and (max-width: 1220px) {
-    .blogpage-blog {
+    .codepage-blog {
         width: 95%;
     }
     
@@ -157,7 +156,7 @@ code {
 }
 
 @media screen and (max-width: 767px) {
-    .blogpage-blog {
+    .codepage-blog {
         width: 90%;
         padding: 20px;
     }

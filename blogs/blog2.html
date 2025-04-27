@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="../stylesheets/inblog.css">
     <script src="../scripts/hamburger.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bærekraftig hosting</title>
+    <title>Ren koding</title>
 
 </head>
 
@@ -58,32 +58,51 @@
             <div class="overlay"></div>
         </div>
         <div class="blog-pagination">
-            <span class="pagination-placeholder">Forrige blogg</span>
-            <a href="blog2.html" class="pagination-link">Neste blogg</a>
+            <a href="blog1.html" class="pagination-link">Forrige blogg</a>
+            <a href="blog3.html" class="pagination-link">Neste blogg</a>
         </div>
         <div class="in-blog-container">
             <div class="blog-content-box">
-                <h1 class="main-header">Bærekraftig hosting</h1>
 
-                <h2 class="sub-header">Hvor mye strøm bruker egentlig serveren din?</h2>
 
-                <p class="paragraphs">I dagens stund er det mye snakk om hvilken påvirkning all bruk av IT har på miljøet. Det handler ikke bare om hvor mye strøm din private datamaskin bruker, men også om hvor mye strøm servere og tjenester i skyen bruker. Folk flest har nok ingen anelse på hvor mye strøm hele 'skyen' bruker, eller hvor mye CO2 det fører til.</p>
+                <h2 class="sub-header">Grunnlaget for grønn kode</h2>
 
-                <p class="paragraphs">Green Coding Solutions har laget et open-source verktøy som de kaller 'Eco-Server'. Programmet kan installeres på en server, verktøyet logger strømforbruket som gir da en enkel oversikt over dataene.</p>
+                <p class="paragraphs">Ren kode vil si at koden er ryddig, enkel å lese og lett å vedlikeholde. Ved å tenke på ren kode når man programmerer unngås det unødvendig kompleksitet, som igjen bidrar til å kunne forbedre programmet eller finne eventuelle feil raskere. Et ekstra pluss med ren kode er at det gir lavere ressursbruk, da effektiv kode gjerne bruker mindre minne og prosessorkraft.</p>
 
-                <h2 class="sub-header">Hvordan virker det?</h2>
+                <p class="paragraphs">La oss se på et enkelt eksempel i programmeringsspråket Javascript:</p>
 
-                <p class="paragraphs">Eco-Server bruker en modul med maskinlæring som estimerer strømforbruket basert på bruken av CPU-serveren og hvor mange virtuelle maskiner som kjører. Verktøyet kan enkelt settes opp med et installasjonsskript, og det lagrer målingene slik at du kan følge med på utviklingen over tid.</p>
+                <h2 class="sub-header">Før (Rotete og lite lesbar kode):</h2>
 
-                <h2 class="sub-header">Hvorfor er dette nyttig?</h2>
+                <pre><code>let validName = false;
+if (name.length >= 3 && name.length <= 20) {
+  validName = true;
+}</code></pre>
 
-                <p class="paragraphs">Oversikt over hvor mye energi serverne dine faktisk bruker. Mulighet til å se hvilke servere som står og går uten å gjøre noe nyttig. Tall på hvor mye CO2-utslipp tjenestene dine gir. Dette gjør det enklere å ta miljøvennlige valg, for eksempel å slå av servere som ikke er i bruk, eller flytte tjenester til steder med renere strøm.</p>
+                <h2 class="sub-header">Etter (renere og mer selvforklarende kode):</h2>
 
-                <h2 class="sub-header">Oppsummering</h2>
+                <pre><code>const isValidName = (name) => {
+    return name.length >= 3 && name.length <= 20;
+  };</code></pre>
 
-                <p class="paragraphs">Ved bruk av Eco-Server kan grunnlaget forbedre bærekraftige valg, og gi en mer oversiktlig plan på strømforbruk.</p>
+                <p class="paragraphs">I eksemplet kan vi se at funksjonen har fått et klart og tydelig navn, noe som gjør at det er lettere å forstå hva den faktisk gjør.</p>
 
-                <p class="paragraphs">Kilde: <a href="https://www.green-coding.io/blog/eco-server-energy-estimation/" target="_blank" rel="noopener noreferrer" style="color: blue; text-decoration: underline;">https://www.green-coding.io/blog/eco-server-energy-estimation/</a></p>
+                <h2 class="sub-header">Tips for ren og grønnere kode:</h2>
+
+                <ul>
+                    <li>Del opp kode i små, tydelige funksjoner</li>
+                    <li>Gi variabler og funksjoner beskrivende navn</li>
+                    <li>Unngå duplisering</li>
+                </ul>
+
+                <h2 class="sub-header">Kort oppsummert:</h2>
+
+                <p class="paragraphs">Når koden er enkel og tydelig, blir det enklere å lage grønn kode, som igjen fører til mindre energibruk og lavere CO2-utslipp.</p>
+
+                <h2 class="sub-header">Kilder:</h2>
+
+                <p class="paragraphs">
+                    <a href="https://www.energystar.gov/products/ask-the-experts/how-go-green-your-code" target="_blank" rel="noopener noreferrer" style="color: blue; text-decoration: underline;">https://www.energystar.gov/products/ask-the-experts/how-go-green-your-code</a>
+                </p>
             </div>
             <footer>
                 <p class="footer">© 2025 Grønn Kode Prosjekt. Alle rettigheter reservert.</p>

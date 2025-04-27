@@ -1,3 +1,27 @@
+/* Pagination styling */
+.blog-pagination {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 4px;
+    padding: 0;
+    position: relative;
+    top: 40px; /* Position pagination 40px down to maintain greenbox position */
+}
+
+.pagination-link {
+    color: #666;
+    text-decoration: underline;
+    padding: 0 20px; /* Add padding to pull links inward */
+}
+
+.pagination-placeholder {
+    visibility: hidden;
+    padding: 0 20px; /* Match link padding */
+}
+
 .in-blog-container {
     margin-left: 80px;
     margin-right: 80px;
@@ -51,11 +75,19 @@ li {
     .blog-content-box {
         width: 85%;
     }
+    .blog-pagination {
+        width: 85%;
+        padding: 0 15px;
+    }
 }
 
 @media screen and (max-width: 1450px) {
     .blog-content-box {
         width: 90%;
+    }
+    .blog-pagination {
+        width: 90%;
+        padding: 0 15px;
     }
 }
 
@@ -63,12 +95,17 @@ li {
     .blog-content-box {
         width: 95%;
     }
+    .blog-pagination {
+        width: 95%;
+        padding: 0 15px;
+    }
 }
 
 @media screen and (max-width: 767px) {
     .in-blog-container {
         margin-left: 40px;
         margin-right: 40px;
+        margin-top: 40px;
     }
     .blog-content-box {
         padding: 20px;
@@ -78,6 +115,43 @@ li {
     }
     .sub-header {
         font-size: 14pt;
+    }
+    .blog-pagination {
+        width: 90%;
+        margin-bottom: 4px;
+        padding: 0 10px;
+    }
+    .pagination-link, .pagination-placeholder {
+        padding: 0 10px;
+    }
+}
+
+/* Code block styling from code.css */
+pre {
+    background-color: floralwhite;
+    border-radius: 8px;
+    padding: 12px;
+    overflow-x: auto;
+    margin: 10px 0;
+    width: 675px; 
+}
+
+code {
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+    color: #333;
+    line-height: 1.4;
+}
+
+@media screen and (max-width: 1220px) {
+    pre {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 925px) {
+    pre {
+        width: auto;
     }
 }
 

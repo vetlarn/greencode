@@ -12,38 +12,8 @@
     <link rel="stylesheet" href="../stylesheets/inblog.css">
     <script src="../scripts/hamburger.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bærekraftig hosting</title>
-    <style>
-        .blog-content-box {
-            background-color: beige;
-            border: 1px solid lightgray;
-            border-radius: 24px;
-            padding: 30px 40px;
-            margin-bottom: 40px;
-            width: 80%;
-            max-width: 1200px;
-        }
-        @media screen and (max-width: 1665px) {
-            .blog-content-box {
-                width: 85%;
-            }
-        }
-        @media screen and (max-width: 1450px) {
-            .blog-content-box {
-                width: 90%;
-            }
-        }
-        @media screen and (max-width: 1220px) {
-            .blog-content-box {
-                width: 95%;
-            }
-        }
-        @media screen and (max-width: 767px) {
-            .blog-content-box {
-                padding: 20px;
-            }
-        }
-    </style>
+    <title>Nettsiders miljøpåvirkning</title>
+
 </head>
 
 <body>
@@ -60,7 +30,7 @@
                 </div>
                 <ul class="nav-elements">
                     <li id="nav0"><a href="../index.html">Hjem</a></li>
-                    <li id="nav1"><a href="../blog.html">Eksempler</a></li>
+                    <li id="nav1"><a href="../code.html">Kodekassa</a></li>
                     <li id="nav4"><a href="../tools.html">Verktøy</a></li>
                     <li id="nav2"><a href="../about.html">Om oss</a></li>
                     <li id="nav3"><a href="../contact.html">Kontakt oss</a></li>
@@ -78,7 +48,7 @@
                     <button class="close-menu">&times;</button>
                     <ul>
                         <li><a href="../index.html" class="hamburger-menu-alt">Hjem</a></li>
-                        <li><a href="../blog.html" class="hamburger-menu-alt">Eksempler</a></li>
+                        <li><a href="../code.html" class="hamburger-menu-alt">Kodekassa</a></li>
                         <li><a href="../tools.html" class="hamburger-menu-alt">Verktøy</a></li>
                         <li><a href="../about.html" class="hamburger-menu-alt">Om oss</a></li>
                         <li><a href="../contact.html" class="hamburger-menu-alt">Kontakt oss</a></li>
@@ -87,29 +57,42 @@
             </div>
             <div class="overlay"></div>
         </div>
+        <div class="blog-pagination">
+            <a href="blog2.html" class="pagination-link">Forrige blogg</a>
+            <span class="pagination-placeholder">Neste blogg</span>
+        </div>
         <div class="in-blog-container">
             <div class="blog-content-box">
-                <h1 class="main-header">Bærekraftig hosting</h1>
+                <h1 class="main-header">Nettsiders miljøpåvirkning</h1>
 
-                <h2 class="sub-header">Hvor mye strøm bruker egentlig serveren din?</h2>
+                <p class="paragraphs">Er virkelig nettsidene bare "i skyen", og noe vi ikke behøver å tenke på? Nei, egentlig ikke. Nettsidene vi kjører i dag, finnes på servere som også på lik linje med for eksempel billadere, er avhengig av strøm. Slik det er i dag er blant annet ca 46.9% (2024) av strømproduksjon i EU av grønn forekomst, som vil si at litt over halvparten av produsert strøm fremdeles er fossil-basert, og bidrar godt til karbonutslipp.</p>
 
-                <p class="paragraphs">I dagens stund er det mye snakk om hvilken påvirkning all bruk av IT har på miljøet. Det handler ikke bare om hvor mye strøm din private datamaskin bruker, men også om hvor mye strøm servere og tjenester i skyen bruker. Folk flest har nok ingen anelse på hvor mye strøm hele 'skyen' bruker, eller hvor mye CO2 det fører til.</p>
+                <p class="paragraphs">Men en nettside tar vel ikke så mye strøm? Nei, en nettside tar ikke like mye strøm som andre artikler gjør, men fremdeles kom det frem i 2022, at hele 115.000.000 nettsider er publisert <strong>bare i Europa</strong>. Med det, har du 2 tips til hvordan du kan være på nett, altså publisere din nettside, men være så grønn som mulig:</p>
 
-                <p class="paragraphs">Green Coding Solutions har laget et open-source verktøy som de kaller 'Eco-Server'. Programmet kan installeres på en server, verktøyet logger strømforbruket som gir da en enkel oversikt over dataene.</p>
+                <h2 class="sub-header">1. Optimaliser koden din!</h2>
 
-                <h2 class="sub-header">Hvordan virker det?</h2>
+                <p class="paragraphs">Det er ikke alltid like lett å skrive god kode, om vi i det hele tatt vet hva "god kode" er. Er du ute av nybegynner-fasen, kan du kanskje komme på å tenke hvordan noen kodespråk er mer effektive enn andre, noe som i grunn er helt sant. Uheldigvis, blir man ikke automatisk god av å bare bytte til det grønneste programmeringsspråket på markedet; du kan fortsatt finne på å skrive like dårlig kode. Gjennom nettsiden våres har vi både tips til hvordan du kan <a href="http://127.0.0.1:3000/code.html" style="color: blue; text-decoration: underline;">effektivisere og grønngjøre koden</a> din, samt en liste med <a href="http://127.0.0.1:3000/tools.html" style="color: blue; text-decoration: underline;">verktøy</a> som kan sjekke hvor grønn nettsiden din allerede er gjennom en rekke tester.</p>
 
-                <p class="paragraphs">Eco-Server bruker en modul med maskinlæring som estimerer strømforbruket basert på bruken av CPU-serveren og hvor mange virtuelle maskiner som kjører. Verktøyet kan enkelt settes opp med et installasjonsskript, og det lagrer målingene slik at du kan følge med på utviklingen over tid.</p>
+                <h2 class="sub-header">2. Publiser siden din gjennom en grønn provider!</h2>
 
-                <h2 class="sub-header">Hvorfor er dette nyttig?</h2>
+                <p class="paragraphs">Slik vi blant annet har vært innom gjennom en <a href="http://127.0.0.1:3000/blogs/blog1.html" style="color: blue; text-decoration: underline;">annen blogg</a> på siden vår, kan du bidra med å publisere nettsiden din gjennom en grønn provider. Her kommer en liste med diverse grønne providers:</p>
+                
+                <ul>
+                    <li><a href="https://www.greengeeks.com" target="_blank" rel="noopener noreferrer" style="color: blue; text-decoration: underline;">Greengeeks</a></li>
+                    <li><a href="https://www.a2hosting.com" target="_blank" rel="noopener noreferrer" style="color: blue; text-decoration: underline;">A2 Hosting</a></li>
+                    <li><a href="https://www.dreamhost.com" target="_blank" rel="noopener noreferrer" style="color: blue; text-decoration: underline;">DreamHost</a></li>
+                    <li><a href="https://www.siteground.com" target="_blank" rel="noopener noreferrer" style="color: blue; text-decoration: underline;">Siteground</a></li>
+                </ul>
+                
+                <p class="paragraphs">Ved å publisere nettsiden gjennom en grønn provider, kan du bidra med å senke karbonutslippet!</p>
 
-                <p class="paragraphs">Oversikt over hvor mye energi serverne dine faktisk bruker. Mulighet til å se hvilke servere som står og går uten å gjøre noe nyttig. Tall på hvor mye CO2-utslipp tjenestene dine gir. Dette gjør det enklere å ta miljøvennlige valg, for eksempel å slå av servere som ikke er i bruk, eller flytte tjenester til steder med renere strøm.</p>
+                <h2 class="sub-header">Kilder</h2>
 
-                <h2 class="sub-header">Oppsummering</h2>
-
-                <p class="paragraphs">Ved bruk av Eco-Server kan grunnlaget forbedre bærekraftige valg, og gi en mer oversiktlig plan på strømforbruk.</p>
-
-                <p class="paragraphs">Kilde: <a href="https://www.green-coding.io/blog/eco-server-energy-estimation/" target="_blank" rel="noopener noreferrer" style="color: blue; text-decoration: underline;">https://www.green-coding.io/blog/eco-server-energy-estimation/</a></p>
+                <p class="paragraphs">
+                    <a href="https://ec.europa.eu/eurostat/web/products-eurostat-news/w/ddn-20250319-1" target="_blank" rel="noopener noreferrer" style="color: blue; text-decoration: underline;">https://ec.europa.eu/eurostat/web/products-eurostat-news/w/ddn-20250319-1</a><br>
+                    <a href="https://evboosters.com/ev-charging-news/europe-surpasses-900-000-public-ev-charge-points/?utm_source=chatgpt.com" target="_blank" rel="noopener noreferrer" style="color: blue; text-decoration: underline;">https://evboosters.com/ev-charging-news/europe-surpasses-900-000-public-ev-charge-points/?utm_source=chatgpt.com</a><br>
+                    <a href="https://snapshot.internetx.com/en/the-european-domain-market-in-2023/?utm_source=chatgpt.com" target="_blank" rel="noopener noreferrer" style="color: blue; text-decoration: underline;">https://snapshot.internetx.com/en/the-european-domain-market-in-2023/?utm_source=chatgpt.com</a>
+                </p>
             </div>
             <footer>
                 <p class="footer">© 2025 Grønn Kode Prosjekt. Alle rettigheter reservert.</p>
